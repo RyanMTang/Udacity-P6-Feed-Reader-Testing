@@ -66,9 +66,8 @@ $(function() {
         });
 
         /* This test ensures that there is at least one .entry element within the .feed container when the loadFeed function is called by beforeEach */
-        it('at least a single .entry', function(done) {
+        it('at least a single .entry', function() {
             expect($('.entry').length).toBeGreaterThan(0);
-            done();
         });
     });
 
@@ -89,9 +88,8 @@ $(function() {
         });
 
         /* Tests that content actually changes */
-        it('feed content changes', function(done) {
+        it('feed content changes', function() {
             expect(newEntry).not.toBe(oldEntry);
-            done();
         });
     }); 
 }());
